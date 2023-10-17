@@ -8,4 +8,42 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Compile Include="obj\Debug\net6.0-windows\.NETCoreApp,Version=v6.0.AssemblyAttributes.cs" />
+    <Compile Include="obj\Debug\net6.0-windows\PermutationShifr.AssemblyInfo.cs" />
+    <Compile Include="obj\Debug\net6.0-windows\PermutationShifr.GlobalUsings.g.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="bin\Debug\net6.0-windows\PermutationShifr.deps.json" />
+    <Content Include="bin\Debug\net6.0-windows\PermutationShifr.runtimeconfig.json" />
+    <Content Include="obj\Debug\net6.0-windows\PermutationShifr.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\net6.0-windows\PermutationShifr.designer.deps.json" />
+    <Content Include="obj\Debug\net6.0-windows\PermutationShifr.designer.runtimeconfig.json" />
+    <Content Include="obj\PermutationShifr.csproj.nuget.dgspec.json" />
+    <Content Include="obj\project.assets.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="bin\Debug\net6.0-windows\PermutationShifr.dll" />
+    <None Include="bin\Debug\net6.0-windows\PermutationShifr.exe" />
+    <None Include="bin\Debug\net6.0-windows\PermutationShifr.pdb" />
+    <None Include="obj\Debug\net6.0-windows\apphost.exe" />
+    <None Include="obj\Debug\net6.0-windows\PermutationShifr.AssemblyInfoInputs.cache" />
+    <None Include="obj\Debug\net6.0-windows\PermutationShifr.assets.cache" />
+    <None Include="obj\Debug\net6.0-windows\PermutationShifr.csproj.BuildWithSkipAnalyzers" />
+    <None Include="obj\Debug\net6.0-windows\PermutationShifr.csproj.CoreCompileInputs.cache" />
+    <None Include="obj\Debug\net6.0-windows\PermutationShifr.csproj.GenerateResource.cache" />
+    <None Include="obj\Debug\net6.0-windows\PermutationShifr.dll" />
+    <None Include="obj\Debug\net6.0-windows\PermutationShifr.Form1.resources" />
+    <None Include="obj\Debug\net6.0-windows\PermutationShifr.GeneratedMSBuildEditorConfig.editorconfig" />
+    <None Include="obj\Debug\net6.0-windows\PermutationShifr.genruntimeconfig.cache" />
+    <None Include="obj\Debug\net6.0-windows\PermutationShifr.pdb" />
+    <None Include="obj\Debug\net6.0-windows\refint\PermutationShifr.dll" />
+    <None Include="obj\Debug\net6.0-windows\ref\PermutationShifr.dll" />
+    <None Include="obj\PermutationShifr.csproj.nuget.g.props" />
+    <None Include="obj\PermutationShifr.csproj.nuget.g.targets" />
+    <None Include="obj\project.nuget.cache" />
+  </ItemGroup>
+
 </Project>

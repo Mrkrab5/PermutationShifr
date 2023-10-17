@@ -19,13 +19,35 @@ namespace PermutationShifr
             string result = "", n = massenge.ToUpper(), tmpString = "";
 
             Random rnd = new Random();
-
+            
+            //Заполнение дополнительной строки случайными уникальными значениями
             for(int i = 0; i < massenge.Length; i++)
             {
+                int v = rnd.Next(0, massenge.Length);
+                //Проверка содержиться ли число в строке, если да то генерируем значение
+                while(tmpString.Contains(v.ToString()))
+                    v = rnd.Next(0, massenge.Length);
 
+                tmpString += $"{v} ";
             }
 
-            return "";
+            int h = 0;
+            string number = "";
+            while(h < tmpString.Length)
+            {
+                if (tmpString[h] != ' ')
+                {
+                    number += tmpString[h];
+                }
+                else
+                {
+                    result += n[Int32.Parse(number)];
+                    number = "";
+                }
+                h++;
+            }
+
+            return result;
         }
     }
 }
