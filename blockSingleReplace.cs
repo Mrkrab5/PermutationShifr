@@ -16,7 +16,7 @@ namespace PermutationShifr
 
         static public string Decoding(string massenge)
         {
-            string n = massenge.ToUpper(), bigReg = "АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯ";
+            string n = massenge.ToUpper(), bigReg = "АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯ", result = "";
             
             Random rnd = new Random();
 
@@ -24,6 +24,11 @@ namespace PermutationShifr
                 n += $"{bigReg[rnd.Next(0, bigReg.Length)]}{bigReg[rnd.Next(0, bigReg.Length)]}";
             else if (massenge.Length % 3 == 2)
                 n += $"{bigReg[rnd.Next(0, bigReg.Length)]}";
+
+            for(int i = 0; i < n.Length; i += 3)
+                result += $"{n[i + 2]}{n[i]}{n[i + 1]}";
+
+            return result;
         }
     }
 }

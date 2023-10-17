@@ -33,12 +33,11 @@ namespace PermutationShifr
 
             int h = 0;
             string number = "";
+            //Пока всё не зашифровали
             while(h < tmpString.Length)
             {
                 if (tmpString[h] != ' ')
-                {
                     number += tmpString[h];
-                }
                 else
                 {
                     result += n[Int32.Parse(number)];
