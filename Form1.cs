@@ -32,6 +32,13 @@ namespace PermutationShifr
                 dopYsl.Visible = true;
                 labelDopYsl.Visible = true;
                 labelDopYsl.Text = "Дополнительные данные: слово";
+                labelDopYsl.Location = new Point(451, 111);
+                dopYsl.Text = "";
+            }
+            else if (choiseMethod.SelectedIndex == 4)
+            {
+                dopYsl.Visible = false;
+                labelDopYsl.Visible = false;
                 dopYsl.Text = "";
             }
         }
@@ -46,9 +53,12 @@ namespace PermutationShifr
 
             else if (choiseMethod.SelectedIndex == 2)
                 itogEncrypt.Text = tableReplace.Decoding(entryMassenge.Text);
-            
+
             else if (choiseMethod.SelectedIndex == 3)
                 itogEncrypt.Text = verticalReplace.Decoding(entryMassenge.Text, dopYsl.Text);
+
+            else if (choiseMethod.SelectedIndex == 4)
+                itogEncrypt.Text = rotaryGrid.Decoding(entryMassenge.Text);
         }
     }
 }

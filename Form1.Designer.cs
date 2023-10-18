@@ -103,7 +103,7 @@
             // 
             labelDopYsl.AutoSize = true;
             labelDopYsl.Font = new Font("Times New Roman", 18F, FontStyle.Regular, GraphicsUnit.Point);
-            labelDopYsl.Location = new Point(483, 111);
+            labelDopYsl.Location = new Point(485, 111);
             labelDopYsl.Name = "labelDopYsl";
             labelDopYsl.Size = new Size(269, 27);
             labelDopYsl.TabIndex = 6;
@@ -141,7 +141,7 @@
             Controls.Add(entryMassenge);
             Controls.Add(label1);
             Name = "Form1";
-            Text = "Form1";
+            Text = " ";
             ResumeLayout(false);
             PerformLayout();
         }
