@@ -53,6 +53,12 @@ namespace PermutationShifr
                 labelDopYsl.Visible = false;
                 dopYsl.Text = "";
             }
+            else if (choiseMethod.SelectedIndex == 7)
+            {
+                dopYsl.Visible = false;
+                labelDopYsl.Visible = false;
+                dopYsl.Text = "";
+            }
         }
 
         private void encrypt_Click(object sender, EventArgs e)
@@ -77,6 +83,9 @@ namespace PermutationShifr
 
             else if (choiseMethod.SelectedIndex == 6)
                 itogEncrypt.Text = doubleReplace.Decoding(entryMassenge.Text);
+            
+            else if (choiseMethod.SelectedIndex == 7)
+                itogEncrypt.Text = crossroad.Decoding(entryMassenge.Text);
         }
     }
 }
