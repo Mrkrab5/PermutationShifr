@@ -59,6 +59,14 @@ namespace PermutationShifr
                 labelDopYsl.Visible = false;
                 dopYsl.Text = "";
             }
+            else if (choiseMethod.SelectedIndex == 8)
+            {
+                dopYsl.Visible = true;
+                labelDopYsl.Visible = true;
+                labelDopYsl.Text = "Дополнительные данные: слово";
+                labelDopYsl.Location = new Point(451, 111);
+                dopYsl.Text = "";
+            }
         }
 
         private void encrypt_Click(object sender, EventArgs e)
@@ -86,6 +94,9 @@ namespace PermutationShifr
             
             else if (choiseMethod.SelectedIndex == 7)
                 itogEncrypt.Text = crossroad.Decoding(entryMassenge.Text);
+
+            else if (choiseMethod.SelectedIndex == 8)
+                itogEncrypt.Text = tringle.Decoding(entryMassenge.Text, dopYsl.Text);
         }
     }
 }
